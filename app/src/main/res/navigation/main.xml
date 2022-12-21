@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+
+    <activity
+        android:id="@+id/login"
+        android:name="com.example.graphgen.login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.graphgen.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.graphgen.setting"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/cantact"
+        android:name="com.example.graphgen.cantact_us"
+        android:label="fragment_cantact_us"
+        tools:layout="@layout/fragment_cantact_us" />
+
+</navigation>

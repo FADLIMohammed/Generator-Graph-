@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+
+        <LinearLayout
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/a"
+                android:layout_width="52dp"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                tools:ignore="Deprecated,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/x"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/b"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:importantForAutofill="no"
+                tools:ignore="Deprecated,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/xx"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/c"
+                android:layout_width="52dp"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                tools:ignore="Autofill,Deprecated,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/Draw"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                style="@android:style/Animation"
+                android:layout_marginStart="120dp"
+                android:text="@string/draw" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent"
+            >
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
